@@ -1,0 +1,172 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "ea3641e0",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "My favourite TV shows are:\n",
+      "Money heist\n",
+      "Friends\n",
+      "Game of Thrones\n",
+      "Dark\n",
+      "My favourite Movies are:\n",
+      "Harry Potter\n",
+      "Lord Of The Rings\n",
+      "The shawshank redemption\n"
+     ]
+    }
+   ],
+   "source": [
+    "#1. Create a list of your favourite tv shows and movies. After creating the list of at least 4items, iterate over the whole list and print it's elements.\n",
+    "\n",
+    "tvshows=[\"Money heist\",\"Friends\",\"Game of Thrones\",\"Dark\"]\n",
+    "movies=[\"Harry Potter\",\"Lord Of The Rings\",\"The shawshank redemption\"]\n",
+    "print(\"My favourite TV shows are:\")\n",
+    "for i in tvshows:\n",
+    "    print(i)  \n",
+    "print(\"My favourite Movies are:\")\n",
+    "for i in movies:\n",
+    "    print(i)\n",
+    "    \n",
+    "    "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "1a5fdf79",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "enter your favourite tv show : family men\n",
+      "enter another tv show : special oops\n",
+      "['Money heist', 'Friends', 'Game of Thrones', 'Dark', 'family men', 'special oops']\n"
+     ]
+    }
+   ],
+   "source": [
+    "#2. Now ask the user to enter 2 of his favourite tv shows. Take that as input and then use the append() function to add those inputs into the list.\n",
+    "\n",
+    "n1=input(\"enter your favourite tv show : \")\n",
+    "n2=input(\"enter another tv show : \")\n",
+    "tvshows.append(n1)\n",
+    "tvshows.append(n2)\n",
+    "print(tvshows)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "036d0c5b",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[2, 8, 5, 3, 0]\n"
+     ]
+    }
+   ],
+   "source": [
+    "#3. Use slicing to print every 2nd element from the list starting from the second element.\n",
+    "\n",
+    "limst=[4,2,6,8,1,5,7,3,9,0]\n",
+    "print(limst[1::2])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "id": "0aacecf4",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "263\n"
+     ]
+    }
+   ],
+   "source": [
+    "#4. Create a list of 5 integers and use a while loop to calculate their sum.\n",
+    "\n",
+    "a=[89,62,35,32,45]\n",
+    "i=0\n",
+    "sum= 0\n",
+    "while i<len(a):\n",
+    "    sum=sum+a[i]\n",
+    "    i+=1\n",
+    "print(sum)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "id": "fb6ff9dc",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter number of rows : 5\n",
+      "1\n",
+      "12\n",
+      "123\n",
+      "1234\n",
+      "12345\n"
+     ]
+    }
+   ],
+   "source": [
+    "#5. Print the following pattern using a loop:\n",
+    "\n",
+    "n=int(input(\"Enter number of rows : \"))\n",
+    "for i in range(1,n+1):\n",
+    "    for j in range(1,i+1):\n",
+    "        print(j,end=\"\")\n",
+    "    print()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "baf09c63",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.8.8"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
